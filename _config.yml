@@ -1,8 +1,8 @@
 # Configuración básica para Jekyll
-title: "HTML Layout Template | CENTRO DD5"
-description: "Template HTML/CSS con layouts en Jekyll, páginas de ejemplo y estilos responsive con skeleton"
-baseurl: "/centro.html-layout"
-url: "https://juanfuent-es.github.io"
+title: "Ecos del anden"
+description: "Visibilizar el como los usuarios se tienen que adaptar ala infraestructura del metro y no al reves"
+baseurl: "/Ecosdelanden"
+url: "https://rhernandezgar-code.github.io"
 
 # Configuración básica de Jekyll
 markdown: kramdown
