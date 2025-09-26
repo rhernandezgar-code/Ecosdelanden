@@ -1,7 +1,7 @@
 # Configuración básica para Jekyll
 title: "Ecos del anden"
 description: "Visibilizar el como los usuarios se tienen que adaptar ala infraestructura del metro y no al reves"
-baseurl: "/Ecosdelanden"
+baseurl: "/"
 url: "https://rhernandezgar-code.github.io"
 
 # Configuración básica de Jekyll

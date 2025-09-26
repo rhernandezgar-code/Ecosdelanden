@@ -1,4 +1,11 @@
+@font-face {
+    font-family: 'howard';
+    src: url('howard_2-webfont.woff2') format('woff2'),
+         url('howard_2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 @font-face {
     font-family: 'immo';
@@ -10,8 +17,7 @@
 }
 
 :root {
-    --font-base:'immo', sans-serif;
-    --font-family: "adobe-aldine", sans-serif;
+    --font-base: 'howard','immo', sans-serif;
     --color-text: #FFF;
     --color-bg: #000;
 
@@ -37,7 +43,7 @@
     --breakpoint-desktop: 1024px;
 
     /* Tamaños de fuente para el navbar */
-    --font-size-mobile-icon: 3rem;
+    --font-size-mobile-icon: 6rem;
     --font-size-nav-link: 2rem;
     --font-size-nav-icon: 3rem;
     /* Tamaños de fuente base (mobile first) */
@@ -54,7 +60,7 @@
 
 /* Estilos default */
 body {
-    font-family: var(--font-family);
+    font-family: var(--font-base);
     color: var(--color-text);
     background: var(--color-bg);
     padding: 0;
@@ -72,16 +78,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    text-align: center;
-    font-family: var(--font-base);
     font-size: 10rem;
     font-weight: 500;
-    margin: 20px ;
 }
 
 h2 {
-    font-family: var(--font-base);
-    font-size: 5rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -113,7 +115,7 @@ footer#main-footer {
 .nav-link {
     font-size: var(--font-size-mobile-icon);
     background-color: var(--color-primary);
-    font-family: var(--font-base);
+    font-family: var(--font-heading);
     text-decoration: none;
     padding: 0;
     font-weight: 800;
@@ -131,6 +133,7 @@ footer#main-footer {
     text-align: center;
     overflow: hidden;
     aspect-ratio: 1 / .5;
+    text-align: left;
     gap: .25em;
     flex-direction: column;
 }
@@ -142,8 +145,8 @@ footer#main-footer {
     max-width: 100px;
 }
 /* Colores específicos por enlace */
-a#home-link { background-color: var(--color-metro-naranja); }
-a#mapa-ruta-link { background-color: var(--color-senal-verde); }
+a#home-link { background-color: var(--color-asfalto); }
+a#mapa-ruta-link { background-color: var(--color-metro-naranja); }
 a#rubrica-link { background-color: var(--color-stop-rojo); }
 a#guia-estilo-link { background-color: var(--color-taxi-rosa); }
 a#proyectos-link { background-color: var(--color-senal-verde); }
