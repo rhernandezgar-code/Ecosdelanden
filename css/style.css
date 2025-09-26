@@ -17,8 +17,8 @@
 
     /* Colores base inspirados en tránsito */
     --color-metro-naranja: #F47C20;   /* Naranja del Metro CDMX */
-    --color-taxi-rosa: #EC407A;       /* Rosa de taxis */
-    --color-senal-verde: #2E7D32;     /* Verde de señalamientos */
+    --color-taxi-rosa: #F47C20;       /* Rosa de taxis */
+    --color-senal-verde: #005EB8;     /* Verde de señalamientos */
     --color-stop-rojo: #D32F2F;       /* Rojo de alto */
     --color-asfalto: #ffffff;         /* Asfalto urbano */
     --color-white: #000;          /* Texto sobre fondo oscuro */
@@ -174,7 +174,7 @@ a#proyectos-link { background-color: var(--color-senal-verde); }
   font-weight: 600;
   line-height: 1;
   border-radius: 12px;      /* cambia a 9999px si las quieres tipo píldora */
-  transition: background .15s ease, transform .1s ease, box-shadow .15s ease;
+  transition: backgro .15s ease, transform .1s ease, box-shadow .15s ease;
   white-space: nowrap;
 }
 
@@ -191,8 +191,3 @@ a#proyectos-link { background-color: var(--color-senal-verde); }
   outline-offset: 2px;
 }
 
-/* Si tu fondo es claro, invierte colores así: */
-/*
-.light .cat { border-color:#000; color:#000; }
-.light .cat:hover{ background: rgba(0,0,0,.06); }
-*/
