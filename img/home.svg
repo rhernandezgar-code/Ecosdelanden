@@ -1,0 +1,29 @@
+<svg width="1240" height="793" viewBox="0 0 1240 793" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_269_42" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1240" height="793">
+<path d="M1220 0C1231.05 0 1240 8.95431 1240 20V773C1240 784.046 1231.05 793 1220 793H582.105C571.06 793 562.105 784.046 562.105 773V627.917C562.105 627.868 562.065 627.827 562.015 627.827C561.965 627.827 561.925 627.784 561.925 627.734C561.871 601.955 539.666 604.364 527.438 604.373C527.398 604.373 527.368 604.341 527.368 604.302C527.368 604.262 527.336 604.23 527.297 604.23H20C8.95431 604.23 0 595.276 0 584.23V20C1.05817e-06 8.95431 8.95431 0 20 0H1220Z" fill="url(#pattern0_269_42)"/>
+<path d="M1220 0C1231.05 0 1240 8.95431 1240 20V773C1240 784.046 1231.05 793 1220 793H582.105C571.06 793 562.105 784.046 562.105 773V627.917C562.105 627.868 562.065 627.827 562.015 627.827C561.965 627.827 561.925 627.784 561.925 627.734C561.871 601.955 539.666 604.364 527.438 604.373C527.398 604.373 527.368 604.341 527.368 604.302C527.368 604.262 527.336 604.23 527.297 604.23H20C8.95431 604.23 0 595.276 0 584.23V20C1.05817e-06 8.95431 8.95431 0 20 0H1220Z" fill="black" fill-opacity="0.35"/>
+</mask>
+<g mask="url(#mask0_269_42)">
+<rect x="-54.7368" width="1465.26" height="793" rx="30" fill="url(#pattern1_269_42)"/>
+<rect x="-54.7368" width="1465.26" height="793" rx="30" fill="black" fill-opacity="0.35"/>
+</g>
+<rect y="621.43" width="547" height="171.57" rx="20" fill="url(#pattern2_269_42)"/>
+<rect x="215" y="648" width="118" height="118" fill="url(#pattern3_269_42)"/>
+<defs>
+<pattern id="pattern0_269_42" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_269_42" transform="matrix(0.000592145 0 0 0.000925926 -0.0684588 0)"/>
+</pattern>
+<pattern id="pattern1_269_42" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_269_42" transform="matrix(0.000520833 0 0 0.000962368 0 -0.0196786)"/>
+</pattern>
+<pattern id="pattern2_269_42" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image1_269_42" transform="matrix(0.00027951 0 0 0.000782628 -0.0019305 -0.291227)"/>
+</pattern>
+<pattern id="pattern3_269_42" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image2_269_42" transform="scale(0.000959693)"/>
+</pattern>
+<image id="image0_269_42" width="1920" height="1080" preserveAspectRatio="none" xlink:href="./video/mainvideo.mp4">  
+<image id="image1_269_42" width="4096" height="2306" preserveAspectRatio="none" xlink:href="./img/ecos.jpg">
+<image id="image2_269_42" width="1042" height="1042" preserveAspectRatio="none" xlink:href="./img/mono.svg">
+</defs>
+</svg>
