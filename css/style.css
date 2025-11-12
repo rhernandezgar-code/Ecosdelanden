@@ -12,16 +12,16 @@
 :root {
     --font-base:'immo', sans-serif;
     --font-family: "adobe-aldine", sans-serif;
-    --color-text: #FFF;
-    --color-bg: #000;
+    --color-text: #000;
+    --color-bg: #fff;
 
     /* Colores base inspirados en tránsito */
     --color-naranja: #ff7500;   /* Naranja del Metro CDMX */
     --color-blanco: #ffffff;         /* Asfalto urbano */
     --color-negro: #000;          /* Texto sobre fondo oscuro */
    
-    --color-bg: var(--color-negro);
-    --color-text: var(--color-blanco);
+    --color-bg: var(  --color-blanco);
+    --color-text: var(  --color-negro);
     --color-primary: var(--color-naranja);
 
     /* Breakpoints */
@@ -97,7 +97,7 @@ img {
 }
 /* layout */
 header#main-header  {
-    background-color: #ff7500;
+    background-color: #fff;
     border-radius: 2em;
     display: flex;
     justify-content: space-between;
@@ -128,9 +128,8 @@ footer#main-footer {
 }
 .nav-link.active,
 .nav-link:hover {
-    background-color:·#ff7500;
-    color: white;
-     padding: 1em 3em;
+    background-color:·#fff;
+    color: #ff7500;
 }
 /* Colores específicos por enlace */
 a#home-link {
@@ -141,6 +140,7 @@ a#home-link {
     height: auto;
     margin-left: 1em;
     fill:#ff7500;
+      text-align: center;
 }
 /* CSS: estilos de las “cajitas” */
 .cat-tags{
@@ -179,106 +179,159 @@ a#home-link {
   outline-offset: 2px;
 }
 
-/* CONTENEDOR PRINCIPAL */
-.usuarios-section {
-	padding: 4rem 1rem;
-	max-width: 1100px;
-	margin: 0 auto;
-	font-family: var(--font-base);
+/* ---------------- HEADER ---------------- */
+header#main-header {
+	background-color: #fff;
+	border-radius: 2em;
+	display:flexbox;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	flex-direction: row;
+	padding: 0.5em 0.5em;
+    border: 2px solid var(--color-negro);
+    margin: 2em;
 }
 
-/* ENCABEZADO */
+header#main-header nav {
+	padding: 1em 3em;
+	color: #000;
+}
+
+/* LINKS DEL HEADER */
+.nav-link {
+	color: #000;
+	margin: 1em;
+	padding: 0.8em 1.5em;
+	border-radius: 1em;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+	background-color: var(--color-naranja);
+	color: #fff;
+}
+
+/* LOGO */
+#mono {
+	width: 40px;
+	height: auto;
+	margin-left: 1em;
+	fill: var(--color-naranja);
+	text-align: center;
+}
+
+/* ---------------- USUARIOS ---------------- */
+.usuarios-section {
+	background-color: #fff;
+	color: #000;
+	padding: 4rem 4vw; /* antes: 4rem 2rem */
+	width: 100%;
+	max-width: none;   /* elimina el límite que forzaba el “bloque centrado” */
+	margin: 0;         /* sin márgenes automáticos laterales */
+	border-radius: 2rem;
+	box-sizing: border-box;
+
+}
+
+/* Estructura de encabezado */
 .header-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 2rem;
+	gap: 2.5rem;
 	align-items: start;
 	margin-bottom: 3rem;
+    
 }
 
 .titulo-usuarios {
 	font-family: var(--font-base);
-	color: #ff7500; /* naranja */
-	font-size: 4rem;
+	color: var(--color-naranja);
+	font-size: 8rem;
 	line-height: 1;
 	margin-bottom: 1rem;
+	text-align: left;
 }
 
 .intro-text {
-	font-size: 1.1rem;
-	line-height: 1.6;
+	font-size: 1.2rem;
+	line-height: 1.7;
 	color: #000;
 	max-width: 90%;
 }
 
 .descripcion {
-	font-size: 1.1rem;
-	line-height: 1.6;
+	font-size: 1.2rem;
+	line-height: 1.7;
 	color: #000;
+	margin-top: 4rem;
 }
 
-/* GALERÍA DE USUARIOS */
+/* Grid de usuarios */
 .usuarios-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 2rem;
 	margin-top: 2rem;
+
 }
 
 .usuario {
 	position: relative;
-	text-align: center;
+	text-align: left;
 }
 
 .usuario img {
 	width: 100%;
 	height: auto;
-	border-radius: 8px;
+	border-radius: 16px;
 	object-fit: cover;
+	transition: transform 0.3s ease;
 }
 
-/* ETIQUETA SOBRE LOS OJOS */
+.usuario:hover img {
+	transform: scale(1.02);
+}
+
+/* Barra sobre los ojos */
 .etiqueta {
 	position: absolute;
 	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding: 0.4rem 1rem;
+	padding: 0.5rem 1.2rem;
 	font-size: 0.9rem;
 	font-weight: 600;
 	border-radius: 6px;
-	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
 }
 
 .etiqueta.naranja {
-	background-color: #ff7500;
+	background-color: var(--color-naranja);
 	color: white;
 }
 
 .etiqueta.blanca {
 	background-color: white;
-	color: #ff7500;
+	color: var(--color-naranja);
+	
 }
 
-/* NOMBRE DE PERSONA */
+/* Hover sobre la barra */
+.usuario:hover .etiqueta {
+	background-color: var(--color-naranja);
+	color: white;
+}
+
+/* Nombre debajo de cada usuario */
 .nombre {
-	font-size: 1rem;
+	position: absolute;
+	bottom: 10px;
+	left: 16px;
+	color: white;
 	font-weight: 600;
-	color: #000;
-	margin-top: 0.5rem;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-	.header-grid {
-		grid-template-columns: 1fr;
-	}
-
-	.titulo-usuarios {
-		font-size: 3rem;
-	}
-
-	.intro-text, .descripcion {
-		font-size: 1rem;
-	}
+	font-size: 1rem;
 }
