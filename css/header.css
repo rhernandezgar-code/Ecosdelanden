@@ -1,0 +1,43 @@
+header#main-header {
+	background-color: #fff;
+	border-radius: 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: calc(100% - 30px);
+	flex-direction: row;
+	padding: 0.5em 0.5em;
+	border: 2px solid var(--color-negro);
+	margin: 2em auto;
+}
+
+header#main-header nav {
+	padding: 1em 3em;
+	color: #000;
+}
+
+/* LINKS DEL HEADER */
+.nav-link {
+	color: #000;
+	margin: 1em;
+	padding: 0.8em 1.5em;
+	border-radius: 1em;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+	background-color: var(--color-naranja);
+	color: #fff;
+}
+
+/* LOGO */
+#mono {
+	width: 40px;
+	height: auto;
+	margin-left: 1em;
+	fill: var(--color-naranja);
+	text-align: center;
+	padding: 0;
+}
