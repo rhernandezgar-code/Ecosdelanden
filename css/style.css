@@ -17,6 +17,31 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'amor-sans-pro-regular';
+    src: url('./amor-sans-pro-regular.otf') format('otf'),
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'amor-sans-pro-italic';
+    src: url('./amor-sans-pro-italic.otf') format('otf'),
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'amor-sans-pro-bold';
+    src: url('./amor-sans-pro-bold.otf') format('otf'),
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'amor-sans-pro-bold-italic';
+    src: url('./amor-sans-pro-bold-italic.otf') format('otf'),
+    font-weight: bold;
+    font-style: italic;
+}
+
 
 
 
@@ -34,8 +59,7 @@ html{
     /* Fuentes */
     --font-display: 'ecosdelanden-regular';
     --font-display-bold: 'ecosdelanden-bold';
-    --font-body: 'adobe-aldine', serif;
-
+    --font-body: 'amor-sans-pro-bold-italic', 'amor-sans-pro-bold', 'amor-sans-pro-italic', 'amor-sans-pro-regular', sans-serif;
     /* Colores */
     --color-text: #000;
     --color-bg: #fff;
@@ -59,7 +83,7 @@ html{
 
     /* Navbar */
     --font-size-mobile-icon: 3rem;
-    --font-size-nav-link: 4rem;
+    --font-size-nav-link: 7rem;
     --font-size-nav-icon: 2rem;
 }
 
@@ -73,7 +97,7 @@ body {
     background: var(--color-bg);
     padding: 0;
     margin: 0;
-    font-family: "adobe-aldine", sans-serif;
+    font-family: 'amor-sans-pro-regular', sans-serif;
 font-weight: 400;
 font-style: normal;
 }
@@ -171,7 +195,42 @@ a#home-link {
     fill:#ff7500;
     text-align: center;
 }
+/* --------------------------------------------------- */
+/*                          home                       */
+/* --------------------------------------------------- */
+.text-left {
+	font-family: var(--font-body);
+    font-size: 2rem;
+    color: var(--color-naranja);
+    padding: 2rem;
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    line-height: 2.5rem;
+}
 
+.nav-link-home{
+	color: #000;
+	margin: 1em;
+	padding: 0.8em 1.5em;
+	border-radius: 1em;
+	transition: all 0.3s ease;
+	font-size: 20px;
+	font-family: var(--font-display);
+	text-transform: uppercase;
+	font-weight: 100;
+    border: 2px solid var(--color-naranja);
+	display: flex;
+	justify-content:end;
+	align-items: left;
+}
+
+.nav-link-home:hover,
+.nav-link-home.active {
+	background-color: var(--color-naranja);
+	color: #fff;
+
+}
 /* --------------------------------------------------- */
 /*                 CAJITAS DE CATEGORÍAS               */
 /* --------------------------------------------------- */
@@ -234,6 +293,7 @@ a#home-link {
 	align-items: start;
 	margin-bottom: 3rem;
 }
+
 
 .titulo-usuarios {
 	font-family: var(--font-display);
@@ -430,17 +490,16 @@ a#home-link {
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center;
-    text-size
 }
 
 .about-text-overlay p {
     font-family: var(--font-display);
     text-transform: uppercase;
-    font-size: 6rem;        
-    line-height: 1.2;
+    font-size: 2rem;        
+    line-height: 1.1;
     color: white;
     margin: 0;
-    text-shadow: 0 0 15px rgba(0,0,0,0.7);
+    text-sha dow: 0 0 15px rgba(0,0,0,0.7);
 }
     
 /* --------------------------------------------------- */
@@ -452,7 +511,7 @@ a#home-link {
     margin: 0 auto;
     font-family: var(--font-display);
     text-transform:capitalize;
-    font-size: 10rem;
+    font-size: 8rem;
     text-align: center;
 }
 
