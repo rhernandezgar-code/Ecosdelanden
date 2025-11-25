@@ -222,7 +222,16 @@ a#home-link {
     border: 2px solid var(--color-naranja);
 	display: flex;
 	justify-content:end;
-	align-items: left;
+	align-items: right;
+}
+.on-a-box {
+	font-family: var(--font-body);
+    font-size: 2rem;
+    color: var(--color-negro);
+    padding: 2rem;
+text-align: center;
+    gap: 1rem;
+    line-height: 2.5rem;
 }
 
 .nav-link-home:hover,
@@ -511,7 +520,7 @@ a#home-link {
     margin: 0 auto;
     font-family: var(--font-display);
     text-transform:capitalize;
-    font-size: 8rem;
+    font-size: 6rem;
     text-align: center;
 }
 
