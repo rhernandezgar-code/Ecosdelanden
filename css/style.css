@@ -1,31 +1,54 @@
-
+/* --------------------------------------------------- */
+/*                      TIPOGRAFÍAS                    */
+/* --------------------------------------------------- */
 
 @font-face {
-    font-family: 'immo';
-    src: url('immo-regular-webfont.woff2') format('woff2'),
-         url('immo-regular-webfont.woff') format('woff');
+    font-family: 'ecosdelanden-regular';
+    src: url('../fonts/ecosdelanden-regular.woff2') format('woff2'),
+         url('../fonts/ecosdelanden-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
+@font-face {
+    font-family: 'ecosdelanden-bold';
+    src: url('../fonts/ecosdelanden-bold.woff2') format('woff2'),
+         url('../fonts/ecosdelanden-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'adobe-aldine';
+    src: url('../fonts/adobe-aldine.woff2') format('woff2'),
+         url('../fonts/adobe-aldine.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --------------------------------------------------- */
+/*                    VARIABLES GLOBALES               */
+/* --------------------------------------------------- */
 
 * {
     box-sizing: border-box;
-    } 
+} 
 
 :root {
-    --font-base:'immo', sans-serif;
-    --font-family: "adobe-aldine", sans-serif;
+    /* Fuentes */
+    --font-display: 'ecosdelanden-regular';
+    --font-display-bold: 'ecosdelanden-bold';
+    --font-body: 'adobe-aldine', serif;
+
+    /* Colores */
     --color-text: #000;
     --color-bg: #fff;
+    --color-naranja: #ff7500;
+    --color-blanco: #ffffff;
+    --color-negro: #000;
 
-    /* Colores base inspirados en tránsito */
-    --color-naranja: #ff7500;   /* Naranja del Metro CDMX */
-    --color-blanco: #ffffff;         /* Asfalto urbano */
-    --color-negro: #000;          /* Texto sobre fondo oscuro */
-   
-    --color-bg: var(  --color-blanco);
-    --color-text: var(  --color-negro);
+    --color-bg: var(--color-blanco);
+    --color-text: var(--color-negro);
     --color-primary: var(--color-naranja);
 
     /* Breakpoints */
@@ -33,25 +56,23 @@
     --breakpoint-tablet: 768px;
     --breakpoint-desktop: 1024px;
 
-    /* Tamaños de fuente para el navbar */
-    --font-size-mobile-icon: 3rem;
-    --font-size-nav-link: 4rem;
-    --font-size-nav-icon: 2rem;
-    /* Tamaños de fuente base (mobile first) */
+    /* Tipografías base */
     --font-size-sm: 1rem;
     --font-size-base: 1.35rem;
     --font-size-lg: 1.5rem;
 
-    /* Colores para bloques de código */
-    --code-bg: var(--color-senal-azul);
-    --code-text: var(--color-white);
-    --code-border: rgba(255,255,255,0.12);
+    /* Navbar */
+    --font-size-mobile-icon: 3rem;
+    --font-size-nav-link: 4rem;
+    --font-size-nav-icon: 2rem;
 }
 
+/* --------------------------------------------------- */
+/*               ASIGNACIÓN DE FUENTES BASE            */
+/* --------------------------------------------------- */
 
-/* Estilos default */
 body {
-    font-family: var(--font-family);
+    font-family: var(--font-body);
     color: var(--color-text);
     background: var(--color-bg);
     padding: 0;
@@ -63,30 +84,54 @@ a {
     text-decoration: none;
 }
 
-/* Títulos responsive */
+/* --------------------------------------------------- */
+/*       REGLAS DE MAYÚSCULAS / MINÚSCULAS             */
+/* --------------------------------------------------- */
+
+/* TÍTULOS → MAYÚSCULAS + BOLD (ecosdelanden-bold) */
+h1, h2 {
+    font-family: var(--font-display-bold);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* SUBTÍTULOS → minúsculas + regular */
+h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    text-transform: lowercase;
+    font-weight: normal;
+}
+
+/* NAVBAR → MAYÚSCULAS + regular */
+.nav-link {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    font: weight 3rem;
+}
+
+/* --------------------------------------------------- */
+/*                ESTILOS TIPOGRÁFICOS                 */
+/* --------------------------------------------------- */
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
 }
 
 h1 {
     text-align: center;
-    font-family: var(--font-base);
     font-size: 10rem;
-    font-weight: 500;
-    margin: 20px ;
+    font-weight: bold;
+    margin: 20px;
 }
 
 h2 {
     text-align: center;
-    font-family: var(--font-base);
     font-size: 5rem;
-    font-weight: 700;
- 
+    font-weight: bold;
 }
 
 h3 {
     text-align: center;
-    font-family: var(--font-base);
     font-size: 2.5rem;
 }
 
@@ -105,7 +150,10 @@ svg {
     height: auto;
     padding: 15px;
 }
-/* layout */
+
+/* --------------------------------------------------- */
+/*                      LAYOUT                         */
+/* --------------------------------------------------- */
 
 footer#main-footer {
     border-top: 1px solid var(--color-text);
@@ -120,23 +168,29 @@ footer#main-footer {
     padding: 1em;
     border-radius: 1em;
 }
+
 .nav-link.active,
 .nav-link:hover {
-    background-color:·#fff;
+    background-color: #fff;
     color: #ff7500;
 }
-/* Colores específicos por enlace */
+
 a#home-link {
     padding: 1em;
 }
+
 #mono {
     width: 40px;
     height: auto;
     margin-left: 1em;
     fill:#ff7500;
-      text-align: center;
+    text-align: center;
 }
-/* CSS: estilos de las “cajitas” */
+
+/* --------------------------------------------------- */
+/*                 CAJITAS DE CATEGORÍAS               */
+/* --------------------------------------------------- */
+
 .cat-tags{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -149,19 +203,19 @@ a#home-link {
   align-items: center;
   justify-content: center;
   padding: 1.25rem 1.5rem;
-  border: 2px solid #fff;   /* delineado blanco */
-  color: #fff;              /* texto blanco */
+  border: 2px solid #fff;
+  color: #fff;
   background: transparent;
   text-decoration: none;
   font-weight: 600;
   line-height: 1;
-  border-radius: 12px;      /* cambia a 9999px si las quieres tipo píldora */
-  transition: backgro .15s ease, transform .1s ease, box-shadow .15s ease;
+  border-radius: 12px;
+  transition: background .15s ease, transform .1s ease, box-shadow .15s ease;
   white-space: nowrap;
 }
 
 .cat:hover{
-  background: rgba(255,255,255,.12); /* leve relleno al pasar el mouse */
+  background: rgba(255,255,255,.12);
 }
 
 .cat:active{
@@ -173,20 +227,21 @@ a#home-link {
   outline-offset: 2px;
 }
 
-/* ---------------- USUARIOS ---------------- */
+/* --------------------------------------------------- */
+/*                       USUARIOS                       */
+/* --------------------------------------------------- */
+
 .usuarios-section {
 	background-color: #fff;
-    text-align: center;
+    text-align:left;
 	color: #000;
-	padding: 4rem 4vw; /* antes: 4rem 2rem */
+	padding: 4rem 4vw;
 	width: 100%;
-	max-width: none;   /* elimina el límite que forzaba el “bloque centrado” */
-	margin: 0;         /* sin márgenes automáticos laterales */
+	margin: 0;
 	border-radius: 2rem;
 	box-sizing: border-box;
 }
 
-/* Estructura de encabezado */
 .header-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -196,25 +251,24 @@ a#home-link {
 }
 
 .titulo-usuarios {
-	font-family: var(--font-base);
+	font-family: var(--font-display-bold);
 	color: var(--color-naranja);
 	font-size: 8rem;
 	line-height: 1;
 	margin-bottom: 1rem;
 	text-align: left;
+	text-transform: uppercase;
 }
 
 .intro-text {
 	font-size: 1.2rem;
 	line-height: 1.7;
-	color: #000;
 	max-width: 90%;
 }
 
 .descripcion {
 	font-size: 1.2rem;
 	line-height: 1.7;
-	color: #000;
 	margin-top: 4rem;
 }
 
@@ -224,7 +278,6 @@ a#home-link {
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 2rem;
 	margin-top: 2rem;
-
 }
 
 .usuario {
@@ -253,7 +306,6 @@ a#home-link {
 	padding: 0.5rem 1.2rem;
 	font-size: 0.9rem;
 	font-weight: 600;
-    text-align: center;
 	border-radius: 6px;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 	transition: all 0.3s ease;
@@ -267,16 +319,15 @@ a#home-link {
 .etiqueta.blanca {
 	background-color: white;
 	color: var(--color-naranja);
-	
 }
 
-/* Hover sobre la barra */
+/* Hover */
 .usuario:hover .etiqueta {
 	background-color: var(--color-naranja);
 	color: white;
 }
 
-/* Nombre debajo de cada usuario */
+/* Nombre abajo */
 .nombre {
 	position: absolute;
 	bottom: 10px;
@@ -284,4 +335,128 @@ a#home-link {
 	color: white;
 	font-weight: 600;
 	font-size: 1rem;
+}
+/* --------------------------------------------------- */
+/*                        FOOTER                       */
+/* --------------------------------------------------- */
+
+#footer-home {
+    margin-top: 4rem;
+    padding: 2rem 2vw;
+    border-top: 2px solid var(--color-naranja);
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-btn {
+    background: var(--color-naranja);
+    color: #000;
+    padding: 2rem;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--font-display);
+    transition: transform .2s ease;
+    cursor: pointer;
+}
+
+.footer-btn:hover {
+    transform: scale(1.05);
+}
+/* --------------------------------------------------- */
+/*                   ABOUT — HERO IMAGE                */
+/* --------------------------------------------------- */
+
+.about-hero .hero-img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+
+/* --------------------------------------------------- */
+/*                ABOUT — OBJETIVOS                    */
+/* --------------------------------------------------- */
+
+.about-content {
+    padding: 2rem 1.5rem;
+}
+
+.objetivos {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.objetivos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .objetivos-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+.objetivos p {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------- */
+/*                ABOUT — SEGUNDA IMAGEN               */
+/* --------------------------------------------------- */
+
+.about-img-section {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.about-img-section .about-img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+
+/* Texto sobre la imagen */
+.about-text-overlay {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.about-text-overlay p {
+    font-family: var(--font-display);
+    font-size: var(--font-size-base);
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    margin: 0;
+}
+
+/* --------------------------------------------------- */
+/*                ABOUT — DESCRIPCIÓN FINAL            */
+/* --------------------------------------------------- */
+
+.about-description {
+    padding: 3rem 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+}
+
+.about-description p {
+    margin-bottom: 1.5rem;
 }
