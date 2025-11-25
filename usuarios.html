@@ -1,92 +1,59 @@
 ---
 layout: default
-title: About Us
+title: Usuarios
 ---
 
-<section class="about-hero">
-    <img src="../img/metro-about.jpg" alt="Metro CDMX" class="hero-img">
+<section class="usuarios-section">
+	<div class="container">
+
+		<!-- Encabezado -->
+		<div class="header-grid">
+			<div class="header-left">
+				<h1 class="titulo-usuarios">USUARIOS</h1>
+				<p class="intro-text">
+					Acorde al Plan Integral de Movilidad de la CDMX de 2024, los grupos de personas de atención prioritaria, como las mujeres, las personas con discapacidad, las personas de la tercera edad y la infancia, enfrentan barreras diversas que reducen sus posibilidades de moverse con seguridad en una ciudad que debiera ser accesible e incluyente para todas las personas.
+				</p>
+			</div>
+
+			<div class="header-right">
+				<p class="descripcion">
+					<strong>Ecos del Andén</strong> escucha a quienes viajan, se adaptan y encuentran sus propias formas de habitar el Metro en su día a día.
+				</p>
+			</div>
+		</div>
+
+		<!-- Galería de usuarios -->
+		<section class="usuarios-grid">
+			<div class="usuario">
+				<img src="./img/omar.jpg" alt="Usuario con silla de ruedas">
+				<span class="etiqueta blanca">Usuario con silla de ruedas</span>
+				
+			</div>
+
+			<div class="usuario">
+				<img src="./img/iker.jpg" alt="Usuario menor de edad">
+				<span class="etiqueta blanca">Usuario menor de edad</span>
+				
+			</div>
+
+			<div class="usuario">
+				<img src="./img/rosaura.jpg" alt="Usuario de la tercera edad">
+				<span class="etiqueta blanca">Usuario de la tercera edad</span>
+				
+			</div>
+
+			<div class="usuario">
+				<img src="./img/fernando.jpg" alt="Usuario con baja visibilidad o ceguera">
+				<span class="etiqueta blanca">Usuario con baja visibilidad / ceguera</span>
+				
+			</div>
+
+			<div class="usuario">
+				<img src="./img/paola.jpg" alt="Usuaria embarazada">
+				<span class="etiqueta blanca">Usuaria embarazada</span>
+			
+			</div>
+		</section>
+
+	</div>
 </section>
-
-<section class="about-content">
-    <h1>About</h1>
-
-    <div class="objetivos">
-        <h2>Objetivos del proyecto</h2>
-        <div class="objetivos-grid">
-            <p>1. Visibilizar las desigualdades que emergen en la movilidad urbana cuando la infraestructura del Metro no responde a las necesidades de grupos de usuarios que pertenecen a minorías.</p>
-
-            <p>2. Identificar las principales situaciones que enfrentan los usuarios al adaptarse al sistema de transporte, relacionándolas con condiciones de aglomeración, tiempos de espera, accesibilidad y seguridad.</p>
-        </div>
-    </div>
-</section>
-
-<section class="about-img-section">
-    <img src="../img/escaleras-about.jpg" alt="Escaleras del metro" class="about-img">
-    <div class="about-text-overlay">
-        <p>Ecos del Andén no busca rediseñar el metro sino analizar cómo los usuarios deben adaptarse al mismo.</p>
-    </div>
-</section>
-
-<section class="about-description">
-    <p>Ecos del Andén nace del deseo de escuchar lo que no siempre se dice: los movimientos, los silencios y las historias que viajan en el Metro de la Ciudad de México.</p>
-    <p>Creemos que el metro es más que un sistema de transporte: es un espejo de la ciudad y de quienes la habitan.</p>
-</section>
-
-<style>
-/* Hero image full width */
-.about-hero .hero-img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-    display: block;
-}
-
-/* Objetivos */
-.objetivos {
-    padding: 2rem 1.5rem;
-}
-.objetivos-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
-
-@media (min-width: 768px) {
-    .objetivos-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-}
-
-/* Second image section */
-.about-img-section {
-    position: relative;
-    margin-top: 3rem;
-}
-.about-img {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
-    display: block;
-}
-.about-text-overlay {
-    position: absolute;
-    bottom: 10%;
-    width: 100%;
-    text-align: center;
-}
-.about-text-overlay p {
-    font-family: var(--font-display);
-    font-size: var(--font-size-base);
-    color: white;
-    text-shadow: 0 0 10px rgba(0,0,0,0.6);
-}
-
-/* Description */
-.about-description {
-    padding: 2rem 1.5rem;
-    max-width: 900px;
-    margin: 0 auto;
-    font-size: var(--font-size-base);
-}
-</style>

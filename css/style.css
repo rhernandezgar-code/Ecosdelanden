@@ -4,27 +4,20 @@
 
 @font-face {
     font-family: 'ecosdelanden-regular';
-    src: url('../fonts/ecosdelanden-regular.woff2') format('woff2'),
-         url('../fonts/ecosdelanden-regular.woff') format('woff');
+    src: url('./ecosdelanden-regular.woff2') format('woff2'),
+         url('./ecosdelanden-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ecosdelanden-bold';
-    src: url('../fonts/ecosdelanden-bold.woff2') format('woff2'),
-         url('../fonts/ecosdelanden-bold.woff') format('woff');
+    src: url('./ecosdelanden-bold.woff2') format('woff2'),
+         url('./ecosdelanden-bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'adobe-aldine';
-    src: url('../fonts/adobe-aldine.woff2') format('woff2'),
-         url('../fonts/adobe-aldine.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* --------------------------------------------------- */
 /*                    VARIABLES GLOBALES               */
@@ -102,13 +95,6 @@ h3, h4, h5, h6 {
     font-weight: normal;
 }
 
-/* NAVBAR → MAYÚSCULAS + regular */
-.nav-link {
-    font-family: var(--font-display);
-    text-transform: uppercase;
-    font: weight 3rem;
-}
-
 /* --------------------------------------------------- */
 /*                ESTILOS TIPOGRÁFICOS                 */
 /* --------------------------------------------------- */
@@ -161,18 +147,12 @@ footer#main-footer {
     text-align: center;
     padding: 2em 0 1em 0;
 }
-
-.nav-link {
-    color: #000;
-    margin: 1em;
-    padding: 1em;
-    border-radius: 1em;
-}
-
-.nav-link.active,
-.nav-link:hover {
-    background-color: #fff;
-    color: #ff7500;
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 a#home-link {
@@ -251,25 +231,26 @@ a#home-link {
 }
 
 .titulo-usuarios {
-	font-family: var(--font-display-bold);
+	font-family: var(--font-display);
 	color: var(--color-naranja);
 	font-size: 8rem;
 	line-height: 1;
 	margin-bottom: 1rem;
-	text-align: left;
+	text-align: center;
 	text-transform: uppercase;
 }
 
 .intro-text {
-	font-size: 1.2rem;
-	line-height: 1.7;
+	font-size: 2rem;
+	line-height: 1.5;
 	max-width: 90%;
 }
 
 .descripcion {
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	line-height: 1.7;
 	margin-top: 4rem;
+    text-align: left;
 }
 
 /* Grid de usuarios */
@@ -282,7 +263,7 @@ a#home-link {
 
 .usuario {
 	position: relative;
-	text-align: left;
+	text-align: center;
 }
 
 .usuario img {
@@ -427,36 +408,47 @@ a#home-link {
     display: block;
     margin: 0;
 }
+/* --------------------------------------------------- */
 
-/* Texto sobre la imagen */
+/*              Texto sobre la imagen */
+/* --------------------------------------------------- */
+
+
+
 .about-text-overlay {
-    position: absolute;
-    bottom: 10%;
-    width: 100%;
+    position: centered;
+    top: 50%;                 /* centra verticalmente */
+    left: 50%;                /* centra horizontalmente */
+    transform: translate(-50%, -50%);
+    width: 90%;
     text-align: center;
-    padding: 0 2rem;
+    text-size
 }
 
 .about-text-overlay p {
     font-family: var(--font-display);
-    font-size: var(--font-size-base);
+    text-transform: uppercase;
+    font-size: 6rem;        
+    line-height: 1.2;
     color: white;
-    text-shadow: 0 0 10px rgba(0,0,0,0.6);
     margin: 0;
+    text-shadow: 0 0 15px rgba(0,0,0,0.7);
 }
-
+    
 /* --------------------------------------------------- */
-/*                ABOUT — DESCRIPCIÓN FINAL            */
+/*       Texto descriptivo de abajo
 /* --------------------------------------------------- */
 
 .about-description {
-    padding: 3rem 1.5rem;
-    max-width: 900px;
+    padding:1rem;
     margin: 0 auto;
-    font-size: var(--font-size-base);
-    line-height: 1.7;
+    font-family: var(--font-display);
+    text-transform:capitalize;
+    font-size: 10rem;
+    text-align: center;
 }
 
 .about-description p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
+
