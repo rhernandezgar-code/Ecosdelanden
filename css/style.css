@@ -135,14 +135,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     text-align: center;
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: bold;
-    margin: 20px;
+    margin: 10px;
 }
 
 h2 {
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 
@@ -200,38 +200,46 @@ a#home-link {
 /* --------------------------------------------------- */
 .text-left {
 	font-family: var(--font-body);
-    font-size: 2rem;
-    color: var(--color-naranja);
-    padding: 2rem;
-    display: grid;
-	grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    line-height: 2.5rem;
+	font-size: 1.5xrem;
+	color: var(--color-naranja);
+	padding: 0 2rem;
+	line-height: 2rem;
 }
-
+#nav-home {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1em;
+}
 .nav-link-home{
 	color: #000;
-	margin: 1em;
-	padding: 0.8em 1.5em;
+	margin: 0;
+	padding: 1em;
 	border-radius: 1em;
 	transition: all 0.3s ease;
-	font-size: 20px;
 	font-family: var(--font-display);
 	text-transform: uppercase;
 	font-weight: 100;
-    border: 2px solid var(--color-naranja);
-	display: flex;
-	justify-content:end;
-	align-items: right;
+	border: 2px solid var(--color-naranja);
+	text-align: center;
+	font-size: 1.5rem;
+	display: inline-block;
+	width: 100%;
 }
 .on-a-box {
 	font-family: var(--font-body);
-    font-size: 2rem;
-    color: var(--color-negro);
-    padding: 2rem;
-text-align: center;
-    gap: 1rem;
-    line-height: 2.5rem;
+	font-size: 1.5rem;
+	color: var(--color-negro);
+	padding: 1.5rem;
+	text-align: center;
+	gap: 1rem;
+	line-height: 2rem;
+    rem;
+	background: black;
+	color: white;
+	text-align: left;
+	border-radius: 1em;
+	margin: 1em;
 }
 
 .nav-link-home:hover,
@@ -325,7 +333,6 @@ text-align: center;
 .descripcion {
 	font-size: 1.5rem;
 	line-height: 1.7;
-	margin-top: 4rem;
     text-align: left;
 }
 
@@ -394,37 +401,7 @@ text-align: center;
 	font-weight: 600;
 	font-size: 1rem;
 }
-/* --------------------------------------------------- */
-/*                        FOOTER                       */
-/* --------------------------------------------------- */
 
-#footer-home {
-    margin-top: 4rem;
-    padding: 2rem 2vw;
-    border-top: 2px solid var(--color-naranja);
-}
-
-.footer-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.footer-btn {
-    background: var(--color-naranja);
-    color: #000;
-    padding: 2rem;
-    border-radius: 25px;
-    text-align: center;
-    font-size: 2rem;
-    font-family: var(--font-display);
-    transition: transform .2s ease;
-    cursor: pointer;
-}
-
-.footer-btn:hover {
-    transform: scale(1.05);
-}
 /* --------------------------------------------------- */
 /*                   ABOUT — HERO IMAGE                */
 /* --------------------------------------------------- */
@@ -454,7 +431,7 @@ text-align: center;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -465,8 +442,8 @@ text-align: center;
 }
 
 .objetivos p {
-    font-size: var(--font-size-base);
-    line-height: 1.6;
+    font: size 1.5 rem;;
+  line-height: 2rem;
 }
 
 /* --------------------------------------------------- */
@@ -528,3 +505,34 @@ text-align: center;
     margin-bottom: 2rem;
 }
 
+/* --------------------------------------------------- */
+/*                        FOOTER                       */
+/* --------------------------------------------------- */
+
+#footer-home {
+    margin-top: 4rem;
+    padding: 2rem 2vw;
+    border-top: 2px solid var(--color-naranja);
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-btn {
+    background: var(--color-naranja);
+    color: #000;
+    padding: 2rem;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--font-display);
+    transition: transform .2s ease;
+    cursor: pointer;
+}
+
+.footer-btn:hover {
+    transform: scale(1.05);
+}
