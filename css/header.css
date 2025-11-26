@@ -6,13 +6,18 @@ header#main-header {
 	align-items: center;
 	width: calc(100% - 30px);
 	flex-direction: row;
-	padding: 0.5em 0.5em;
+	padding: 0.5em 2em;
 	border: 2px solid var(--color-negro);
 	margin: 1em auto;
+	position: fixed;
+	left: 15px;
+	z-index: 9;
 }
 
+header#main-header {}
+
 header#main-header nav {
-	padding: 1em 1em;
+	padding: 0.5em 1em;
 	color: #000;
 }
 
@@ -40,7 +45,7 @@ header#main-header nav {
 #mono {
 	width: 40px;
 	height: auto;
-	margin-left: 0.5em;
+	margin-left: 0;
 	fill: var(--color-naranja);
 	text-align: center;
 	padding: 0;
