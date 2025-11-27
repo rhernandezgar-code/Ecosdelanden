@@ -231,6 +231,18 @@ a#home-link {
 	display: inline-block;
 	width: 100%;
 }
+#video-masked{
+    margin-top: -8rem;
+    position: relative;
+}
+#intro-text{
+    position: absolute;
+    color: white;
+    text-align: left;
+top: 9rem;
+left: 2rem;
+
+}
 .on-a-box {
 	font-family: var(--font-body);
 	font-size: 1.5rem;
