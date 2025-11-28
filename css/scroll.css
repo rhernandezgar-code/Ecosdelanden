@@ -1,7 +1,7 @@
 :root {
-    --scroll-background: red;
-    --scroll-foreground: blue;
-    --scroll-background-over: yellow;
+    --scroll-background: var(--color-negro);;
+    --scroll-foreground: var(--color-naranja);
+    --scroll-background-over: var(--color-blanco);;
     --scroll-size: 10px;
 }
 
