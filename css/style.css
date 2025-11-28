@@ -203,6 +203,17 @@ a#home-link {
 /* --------------------------------------------------- */
 /*                          home                       */
 /* --------------------------------------------------- */
+.titulo-home {
+	font-family: var(--font-display);
+	color: var(--color-blanco);
+	font-size: 8rem;
+	line-height: 1;
+	text-align: left;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	
+}
 .text-left {
 	font-family: var(--font-body);
 	font-size: 1.5xrem;
@@ -234,11 +245,13 @@ a#home-link {
 #video-masked{
     margin-top: -8rem;
     position: relative;
+    
 }
 #intro-text{
     position: absolute;
     color: white;
     text-align: left;
+    padding: 1rem ;
 top: 9rem;
 left: 2rem;
 
@@ -267,7 +280,7 @@ left: 2rem;
 /*                  NOSOTRAS — HERO IMAGE                */
 /* --------------------------------------------------- */
 
-.nosotras-hero .hero-img {
+.nosotras-hero .nosotras-img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -354,6 +367,7 @@ left: 2rem;
     margin: 0;
     text-shadow: 0 0 10px rgba(0,0,0,0.6);
     padding: 4rem;
+    
 }
 
 /* --------------------------------------------------- */
