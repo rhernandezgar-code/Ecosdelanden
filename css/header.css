@@ -14,8 +14,6 @@ header#main-header {
 	z-index: 9;
 }
 
-header#main-header {}
-
 header#main-header nav {
 	padding: 0.5em 1em;
 	color: #000;
@@ -45,7 +43,7 @@ header#main-header nav {
 #mono {
 	width: 40px;
 	height: auto;
-	margin-left: 0;
+	margin-left: 1em;
 	fill: var(--color-naranja);
 	text-align: center;
 	padding: 0;
