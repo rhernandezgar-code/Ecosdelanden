@@ -210,11 +210,10 @@ a#home-link {
     line-height: 1;
     text-align: left;
     text-transform: uppercase;
-
-
+    
 }
 
-.text-orange {
+#text-orange {
     font-family: var(--font-body);
     font-size: 1.5rem;
     color: var(--color-naranja);
@@ -558,7 +557,21 @@ a#home-link {
     font-weight: 600;
     font-size: 1rem;
 }
+/* --------------------------------------------------- */
+/*                      EXPERIENCIA                 */
+/* --------------------------------------------------- */
+.imagenes-lado-a-lado {
+    display: flex;
+    gap: 1rem; /* separación entre imágenes */
+    justify-content: left; 
+    align-items: left; 
+}
 
+.imagenes-lado-a-lado img {
+    width: 100%;
+    max-width: 600px; /* ajusta el tamaño que tú quieras */
+    border-radius: 20px; /* opcional */
+}
 
 
 /* --------------------------------------------------- */
