@@ -5,18 +5,9 @@
 /* --------------------------------------------------- */
 
 @font-face {
-    font-family: 'ecosdelanden-regular';
-    src: url('./ecosdelanden-regular.woff2') format('woff2'),
-        url('./ecosdelanden-regular.woff') format('woff');
+    font-family: 'Ecos Del Anden';
+    src: url('./ecosdelanden-vf.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ecosdelanden-bold';
-    src: url('./ecosdelanden-bold.woff2') format('woff2'),
-        url('./ecosdelanden-bold.woff') format('woff');
-    font-weight: bold;
     font-style: normal;
 }
 
@@ -38,12 +29,10 @@
     font-display: swap;
 }
 
-
-
-
 /* --------------------------------------------------- */
 /*                    VARIABLES GLOBALES               */
 /* --------------------------------------------------- */
+
 html {
     font-size: 14px;
 }
@@ -54,8 +43,7 @@ html {
 
 :root {
     /* Fuentes */
-    --font-display: 'ecosdelanden-regular';
-    --font-display-bold: 'ecosdelanden-bold';
+    --font-display: 'Ecos Del Anden', sans-serif;
     --font-body: 'AmorSansPro', sans-serif;
     /* Colores */
     --color-text: #000;
@@ -114,8 +102,8 @@ main {
 /* TÍTULOS → MAYÚSCULAS + BOLD (ecosdelanden-bold) */
 h1,
 h2 {
-    font-family: var(--font-display-bold);
-    font-weight: bold;
+    font-family: var(--font-display);
+    font-variation-settings: "wght" 900;
     text-transform: uppercase;
 }
 
@@ -125,8 +113,8 @@ h4,
 h5,
 h6 {
     font-family: var(--font-display);
+    font-variation-settings: "wght" 100;
     text-transform: lowercase;
-    font-weight: normal;
 }
 
 /* --------------------------------------------------- */
@@ -139,7 +127,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 800;
+    font-variation-settings: "wght" 900;
 }
 
 h1 {
@@ -281,6 +269,7 @@ a#home-link {
 
 .nav-link-home:hover,
 .nav-link-home.active {
+    font-variation-settings: "wght" 400;
     background-color: var(--color-naranja);
     color: #fff;
 
@@ -478,6 +467,18 @@ a#home-link {
     padding: 0;
     margin: 0;
     margin-bottom: .5em;
+}
+
+#titulo-variable {
+    font-family: 'Ecos Del Anden';
+    font-size: 18vw;
+    color: var(--color-naranja);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-variation-settings: "wght" 100;
+    line-height: .8em;
 }
 
 .intro-text {

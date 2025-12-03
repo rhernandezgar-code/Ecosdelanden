@@ -29,11 +29,12 @@ header#main-header nav {
 	font-size: 20px;
 	font-family: var(--font-display);
 	text-transform: uppercase;
-	font-weight: 100;
+	font-variation-settings: "wght" 100;
 }
 
 .nav-link:hover,
 .nav-link.active {
+	font-variation-settings: "wght" 400;
 	background-color: var(--color-naranja);
 	color: #fff;
 }

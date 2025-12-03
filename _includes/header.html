@@ -11,16 +11,16 @@
     </svg>
   </a>
   <nav>
-     <a class="nav-link" href="{{ '/nosotras.html' | relative_url }}" title="Conoce sobre el proyecto">
+     <a class="nav-link{% if page.url contains 'nosotras' %} active{% endif %}" href="{{ '/nosotras.html' | relative_url }}" title="Conoce sobre el proyecto">
       Nosotras
     </a>
-    <a class="nav-link" href="{{ '/usuarios.html' | relative_url }}" title="Conoce a nuestos usuarios">
+    <a class="nav-link{% if page.url contains 'usuarios' %} active{% endif %}" href="{{ '/usuarios.html' | relative_url }}" title="Conoce a nuestos usuarios">
       Usuarios
     </a>
-    <a class="nav-link" href="{{ '/experiencia-interactiva.html' | relative_url }}" title="Conoce el metro en 3D">
+    <a class="nav-link{% if page.url contains 'experiencia-interactiva' %} active{% endif %}" href="{{ '/experiencia-interactiva.html' | relative_url }}" title="Conoce el metro en 3D">
       Experiencia Interactiva
     </a>
-    <a class="nav-link" href="{{ '/juegodemesa.html' | relative_url }}" title="Conoce el juego de mesa">
+    <a class="nav-link{% if page.url contains 'juegodemesa' %} active{% endif %}" href="{{ '/juegodemesa.html' | relative_url }}" title="Conoce el juego de mesa">
       Juego de mesa
     </a>
   </nav>
