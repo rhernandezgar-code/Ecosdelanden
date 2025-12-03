@@ -26,6 +26,8 @@
     font-variation-settings: "wght" 100;
     line-height: .8em;
     transition: all .35s ease-in-out;
+    -webkit-text-stroke: 1px var(--color-naranja);
+    color: white;
 }
 
 #titulo-variable span:hover {
