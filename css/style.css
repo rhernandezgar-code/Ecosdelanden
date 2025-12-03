@@ -469,18 +469,6 @@ a#home-link {
     margin-bottom: .5em;
 }
 
-#titulo-variable {
-    font-family: 'Ecos Del Anden';
-    font-size: 18vw;
-    color: var(--color-naranja);
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
-    font-variation-settings: "wght" 100;
-    line-height: .8em;
-}
-
 .intro-text {
     font-size: 1.5em;
     line-height: 1.5;
