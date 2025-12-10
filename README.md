@@ -7,7 +7,6 @@
 ## Sobre el proyecto
 
 Ecos del Andén reúne distintas aproximaciones visuales, narrativas y tecnológicas para explorar la experiencia del usuario dentro del metro: desde la espera en los andenes hasta la convivencia en los vagones. El proyecto analiza cómo las personas se adaptan al espacio, cómo negocian con las multitudes y cómo la infraestructura condiciona sus trayectos.
-
 La plataforma integra:
 
 * **Experiencia interactiva 3D**, donde el usuario recorre el trayecto desde los torniquetes hasta el interior del vagón, encontrándose con cinco personajes que representan distintos perfiles de usuarios.
